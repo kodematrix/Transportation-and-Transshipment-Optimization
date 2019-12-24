@@ -6,6 +6,8 @@ Transportation Optimal path to Stateline Shipping company has been found using L
 * In addition to shipping directly from each of the six plants to one of the three waste disposal sites, Rachel is also considering using each of the plants and waste disposal sites as intermediate shipping points. Trucks would be able to drop a load at a plant or disposal site to be picked up and carried on to the final destination by another truck, and vice versa. 
 * She particularly wants to know if it would be cheaper to ship directly from the plants to the waste sites or if she should drop and pick up some loads at the various plants and waste sites. 
 ### Agenda
+![Agenda](https://user-images.githubusercontent.com/54346057/71422688-074ecd00-2652-11ea-88fa-aa60c2149678.JPG)
+
 
 ### Approach
 * Our aim is to construct a model by considering the optimal approaches that would minimize the cost
@@ -16,7 +18,7 @@ Transportation Optimal path to Stateline Shipping company has been found using L
 ## Cost and Optimal Path Findings using LPSolver
 ### Transportation Analysis 
 ### Network Diagram
-
+![Network](https://user-images.githubusercontent.com/54346057/71422689-07e76380-2652-11ea-8f6d-7f1b2de06824.JPG)
 #### Mathematical Formulation
 ```
 Minimum Z:  12 x1A + 15 x1B + 17 x1C + 14 x2A + 9 x2B + 10 x2C + 13 x3A + 20 x3B + 11 x3C + 17 x4A + 16 x4B + 19 x4C + 7 x5A + 14 x5B + 12 x5C + 22 x6A + 16 x6B + 18 x6C + 0 x7A + 0 x7B + 0 x7C;
@@ -45,7 +47,7 @@ get.variables(x)
  Cost is *$2822*
  ### TransShipment Analysis
  ### Network Diagram
-
+![Net2](https://user-images.githubusercontent.com/54346057/71422686-074ecd00-2652-11ea-96ce-a4d8323bb0e9.JPG)
 #### Mathematical Formulation
 ```
 Min Z : 6X12 + 4X13 + 9X14 + 7X15 + 8X16 + 6X21 + 11X23 + 10X24 + 12X25 + 7X26 + 5X31 + 11X32 + 3X34 + 7X35 + 15X36 + 9X41 + 10X42 + 3X43 + 3X45 + 16X46 + 7X51 + 12X52 + 7X53 + 3X54 + 14X56 + 8X61 + 7X62 + 15X63 + 16X64 + 14X65 + 12X1A + 15X1B + 17X1C + 14X2A + 9X2B + 10X2C + 13X3A + 20X3B +11X3C + 17X4A + 16X4B + 19X4C + 7X5A + 14X5B + 12X5C + 22X6A + 16X6B + 18X6C + 12XAB + 10XAB + 12XBA + 15XBC + 10XCA + 10XCB;
@@ -82,6 +84,7 @@ get.variables(y)
 Cost is *$3693*
 
 # Conclusion
+![conclusion](https://user-images.githubusercontent.com/54346057/71422685-074ecd00-2652-11ea-82cb-13b910aa2c2a.JPG)
 
 
 
