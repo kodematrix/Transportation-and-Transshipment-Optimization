@@ -1,0 +1,25 @@
+---
+title: "Transportation Model"
+output:
+  html_document:
+    df_print: paged
+  html_notebook: default
+  pdf_document: default
+---
+
+```{r}
+library(lpSolveAPI)
+x <- read.lp("TP.lp")
+x
+```
+
+
+
+```{r}
+solve(x)
+get.objective(x)
+get.variables(x)
+get.constraints(x)
+get.sensitivity.objex(x)
+get.sensitivity.rhs(x)
+```

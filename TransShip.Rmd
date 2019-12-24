@@ -1,0 +1,21 @@
+---
+title: "Transshipment model"
+output:
+  html_document:
+    df_print: paged
+---
+
+```{r}
+library(lpSolveAPI)
+y <- read.lp("tssp2.lp")
+y
+```
+
+```{r}
+solve(y)
+get.objective(y)
+get.variables(y)
+get.constraints(y)
+get.sensitivity.objex(y)
+get.sensitivity.rhs(y)
+```
